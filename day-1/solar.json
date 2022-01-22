@@ -1,0 +1,11 @@
+{
+    "solarSystem": [
+    {
+        "planets" : [
+            "mercury", "venus", "earth","mars", "jupiter", "saturn", "uranus", "neptune", "pluto"
+        ],
+        "starName": "Sun",
+        "galaxy": "Milky Way"
+    }
+]
+}
