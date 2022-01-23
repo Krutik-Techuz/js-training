@@ -365,3 +365,46 @@ console.log('Age of earth and mars respectively: ', earth.getAge() + ' ' + mars.
 
 solarSystem = JSON.parse(jsonData);
 console.log('Star Name of solar system json: \n', solarSystem[0]['starName'])
+
+//Array methods
+const person_name = ["abc", "xyz", "def", "gho"];
+person_name.sort(); // array sort
+person_name.reverse(); // array reverse
+const array1 = [4, 10, 11, 50, 25, 110];
+array1.sort(function(a,b){return 0.5 - Math.random();}); // to sort in random manner
+
+//Arrays itteration
+const numbers = [45, 4, 9, 16, 25];
+//Array Mapping
+const num2 = numbers.map(myFunction);
+function myFunction(value) {
+  return value * 2;
+}
+// Array Filter
+const over10 = numbers.filter(myFunction);
+function myFunction(value, index, array) { // show the value which is over 10
+    return value > 10;
+} 
+//Array Reduce method
+let sum = numbers.reduce(myFunction)
+function myFunction(total, value) {
+    return total + value;
+} 
+
+//Array Every method
+let test = numbers.every(myFunction);
+function myFunction(value, index, array) { //check if all array values pass a test.
+    return value > 18;
+} 
+//Array some method
+let test = numbers.some(myFunction);
+function myFunction(value, index, array) {  //if some array values pass a test.
+    return value > 18;
+} 
+//Array find method
+let test = numbers.some(myFunction);
+function myFunction(value, index, array) {  // array first element value pass a test.
+    return value > 18;
+} 
+//Array includes method
+numbers.includes(45); // check if the value is present in an array or not.
